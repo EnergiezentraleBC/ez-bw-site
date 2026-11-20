@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ez-bw.com ist die Postfach-Domain der Energiezentrale. Kundinnen und Kunden erhalten hierüber eine persönliche Adresse für die Korrespondenz zu ihren Energielieferverträgen.">
+  <meta name="robots" content="index,follow">
+  <title>ez-bw.com – Kundenpostfach der Energiezentrale</title>
+  <style>
+    :root {
+      --ink: #1a2420;
+      --muted: #5a635e;
+      --soft: #7a847e;
+      --bg: #f3f0e8;
+      --paper: #fffcf6;
+      --line: #d8d2c4;
+      --brand: #1b3d32;
+      --brand-mid: #2a5a48;
+      --gold: #b0893e;
+      --gold-soft: #e8d7b0;
+      --fehl: #8a5a12;
+      --fehl-bg: #f8edd4;
+      --focus: #1b3d32;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", "Times New Roman", Times, serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+      font-size: 1.0625rem;
+    }
+
+    a { color: var(--brand-mid); }
+    a:hover { color: var(--brand); }
+    a:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    .wrap {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 0 1.35rem;
+    }
+
+    header {
+      background: var(--brand);
+      color: #f6f3ea;
+      padding: 1.15rem 0 1.25rem;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    header .brand-kicker {
+      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    header h1 {
+      font-size: 1.55rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      line-height: 1.25;
+    }
+
+    header .sub {
+      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.92rem;
+      color: #d5ddd8;
+      margin-top: 0.2rem;
+      font-weight: 400;
+    }
+
+    nav {
+      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.84rem;
+      margin-top: 0.95rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 1.15rem;
+    }
+
+    nav a {
+      color: #f6f3ea;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    nav a:hover { border-bottom-color: var(--gold-soft); color: #fff; }
+
+    main { padding: 2.4rem 0 2.6rem; }
+
+    .panel {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      padding: 2rem 1.7rem 1.85rem;
+      box-shadow: 0 1px 0 rgba(27, 61, 50, 0.04);
+    }
+
+    .eyebrow {
+      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 0.55rem;
+    }
+
+    .lead-title {
+      font-size: 1.7rem;
+      line-height: 1.25;
+      font-weight: 600;
+      margin-bottom: 1.05rem;
+      color: var(--brand);
+    }
+
+    .panel p { margin-bottom: 0.95rem; }
+    .panel p:last-child { margin-bottom: 0; }
+
+    .cta {
+      margin: 1.55rem 0 0.35rem;
+    }
+
+    .btn {
+      display: inline-block;
+      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      background: var(--brand);
+      color: #f6f3ea;
+      text-decoration: none;
+      padding: 0.72rem 1.25rem;
+      border-radius: 2px;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .btn:hover { background: var(--brand-mid); color: #fff; }
+
+    .hint {
+      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 0.7rem;
+    }
+
+    section.legal {
+      margin-top: 2.4rem;
+      padding-top: 0.2rem;
+    }
+
+    section.legal h2 {
+      font-size: 1.28rem;
+      color: var(--brand);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.45rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section.legal h3 {
+      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 1.25rem 0 0.4rem;
+      font-weight: 700;
+    }
+
+    address {
+      font-style: normal;
+      margin-bottom: 0.2rem;
+    }
+
+    .meta, section.legal p, section.legal ul {
+      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+
+    section.legal p { margin-bottom: 0.7rem; }
+
+    section.legal ul {
+      margin: 0 0 0.7rem 1.15rem;
+    }
+
+    section.legal li { margin-bottom: 0.25rem; }
+
+    .fehlt {
+      display: inline-block;
+      background: var(--fehl-bg);
+      color: var(--fehl);
+      font-weight: 700;
+      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      padding: 0.05rem 0.4rem;
+      border: 1px dashed #c9a45a;
+    }
+
+    footer {
+      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.8rem;
+      color: #d5ddd8;
+      background: var(--brand);
+      border-top: 3px solid var(--gold);
+      padding: 1.15rem 0 1.3rem;
+    }
+
+    footer a { color: var(--gold-soft); text-decoration: none; }
+    footer a:hover { color: #fff; text-decoration: underline; }
+
+    footer p { margin: 0; }
+
+    @media (max-width: 640px) {
+      body { font-size: 1rem; }
+      header { padding: 1rem 0 1.1rem; }
+      header h1 { font-size: 1.32rem; }
+      main { padding: 1.5rem 0 2rem; }
+      .panel { padding: 1.45rem 1.15rem 1.35rem; }
+      .lead-title { font-size: 1.42rem; }
+      .btn { display: block; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="brand-kicker">Energiezentrale</p>
+      <h1>Kundenpostfach ez-bw.com</h1>
+      <p class="sub">Persönliche Postfach-Adressen für Kundinnen und Kunden der Energiezentrale</p>
+      <nav aria-label="Seiteninhalt">
+        <a href="#inhalt">Erläuterung</a>
+        <a href="https://portal.energiezentrale-bw.de">Kundenportal</a>
+        <a href="#impressum">Impressum</a>
+        <a href="#datenschutz">Datenschutz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <article class="panel" id="inhalt">
+        <p class="eyebrow">Domain ez-bw.com</p>
+        <h2 class="lead-title">Das Kundenpostfach der Energiezentrale</h2>
+        <p>ez-bw.com ist die Postfach-Domain der Energiezentrale. Die Energiezentrale wird von Ermo-Energie betrieben, Inhaber ist Sergej Ermolaev.</p>
+        <p>Kundinnen und Kunden der Energiezentrale erhalten eine persönliche Postfach-Adresse unter dieser Domain. Darüber läuft die Korrespondenz zu ihren Energielieferverträgen. Die zugehörigen Nachrichten können sie in ihrem Kundenportal einsehen.</p>
+        <p>Allgemeine Anfragen an die Energiezentrale richten Sie bitte an die Kontaktadresse im Impressum oder über das Kundenportal.</p>
+        <p class="cta">
+          <a class="btn" href="https://portal.energiezentrale-bw.de">Zum Kundenportal</a>
+        </p>
+        <p class="hint">Anmeldung unter portal.energiezentrale-bw.de</p>
+      </article>
+
+      <section class="legal" id="impressum" aria-labelledby="impressum-heading">
+        <h2 id="impressum-heading">Impressum</h2>
+        <h3>Angaben gemäß § 5 DDG</h3>
+        <address>
+          Ermo-Energie<br>
+          Einzelunternehmen<br>
+          Inhaber: Sergej Ermolaev<br>
+          Rochus-Merz-Straße 3<br>
+          78713 Schramberg<br>
+          Deutschland
+        </address>
+
+        <h3>Kontakt</h3>
+        <p class="meta">
+          Telefon: <a href="tel:+491722768128">+49 172 2768128</a><br>
+          E-Mail: <a href="mailto:info@energiezentrale-bw.de">info@energiezentrale-bw.de</a><br>
+          Internet: <a href="https://www.energiezentrale-bw.de">www.energiezentrale-bw.de</a>
+        </p>
+
+
+        <h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
+        <address>
+          Sergej Ermolaev<br>
+          Rochus-Merz-Straße 3<br>
+          78713 Schramberg
+        </address>
+      </section>
+
+      <section class="legal" id="datenschutz" aria-labelledby="datenschutz-heading">
+        <h2 id="datenschutz-heading">Datenschutz</h2>
+        <p>Diese Hinweise gelten ausschließlich für diese statische Informationsseite unter ez-bw.com. Das Kundenportal unter portal.energiezentrale-bw.de hat eigene Datenschutzhinweise.</p>
+
+        <h3>Verantwortlicher</h3>
+        <p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist Ermo-Energie, Inhaber Sergej Ermolaev, Rochus-Merz-Straße 3, 78713 Schramberg, Telefon <a href="tel:+491722768128">+49 172 2768128</a>, E-Mail <a href="mailto:info@energiezentrale-bw.de">info@energiezentrale-bw.de</a>.</p>
+
+        <h3>Keine Cookies, kein Tracking</h3>
+        <p>Auf dieser Seite werden keine Cookies gesetzt. Es findet kein Tracking statt, und es kommen keine Analysewerkzeuge und keine Werbetechnik zum Einsatz. Es gibt kein Kontaktformular und keine Nutzeranmeldung auf dieser Seite. Beim Aufruf werden durch uns keine personenbezogenen Daten erhoben, die über den technisch notwendigen Betrieb hinausgehen.</p>
+
+        <h3>Hosting</h3>
+        <p>Diese Seite wird über GitHub Pages bereitgestellt. Anbieter des Hostings ist GitHub, Inc., 88 Colin P. Kelly Jr. St, San Francisco, CA 94107, USA. Der Hoster kann technisch notwendige Zugriffsdaten (insbesondere IP-Adresse, Datum und Uhrzeit des Abrufs, aufgerufene Ressource sowie Angaben zu Browser und Betriebssystem) in Server-Logdateien verarbeiten, soweit dies für die Auslieferung, die Sicherheit und die Stabilität der Website erforderlich ist. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und funktionsfähigen Betrieb). Die Verarbeitung kann in den USA erfolgen. GitHub, Inc. ist unter dem EU-US Data Privacy Framework zertifiziert; die Übermittlung stützt sich auf Art. 45 DSGVO.</p>
+
+        <h3>Ihre Rechte</h3>
+        <p>Soweit personenbezogene Daten verarbeitet werden, stehen Ihnen die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch zu, jeweils im Rahmen der gesetzlichen Vorgaben. Außerdem haben Sie das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren. Zuständig ist insbesondere der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg.</p>
+
+        <h3>Kontakt zum Datenschutz</h3>
+        <p>Anfragen zum Datenschutz richten Sie bitte an die oben genannte Kontaktadresse.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© Energiezentrale · betrieben durch Ermo-Energie, Inhaber Sergej Ermolaev · <a href="#impressum">Impressum</a> · <a href="#datenschutz">Datenschutz</a></p>
+    </div>
+  </footer>
+</body>
+</html>
